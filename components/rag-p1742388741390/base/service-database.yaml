@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app.kubernetes.io/instance: rag-p1742388741390-database
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: rag-p1742388741390-database
+  name: rag-p1742388741390-database
+spec:
+  ports:
+    - port: 8000
+      protocol: TCP
+      targetPort: 8000
+  selector:
+    app.kubernetes.io/instance: rag-p1742388741390-database
